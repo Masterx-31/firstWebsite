@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+#textA {
+    width: 300px;
+    height: 350px;
+    resize: none;
+    border: 2px solid black;
+}
+#textA:focus {
+    outline: none;
+}
+body {
+
+    background: linear-gradient(#6DECAF, #F61067);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+button {
+    background-color: white;
+    border: 2px solid black;
+    margin-left: 5px;
+    color: black;
+    transition-duration: 300ms;
+}
+button:hover {
+    background-color: black;
+    margin-left: 5px;
+    color: white;
+    transition-duration: 300ms;
+}
+.in {
+ color:black;
+ border: none;
+border-bottom: 2px solid black;
+margin-bottom: 5px;
+background: transparent;
+}
+.in:focus {
+    outline: none;
+}
+
+.label {
+  color: black;
+  margin-bottom: 3px;
+  font-family: 'Roboto', sans-serif;
+}
+.dodanyP {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5px;
+}
+.Title { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    border-style: solid none none ;
+    border-color: black;
+}

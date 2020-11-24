@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Działania na tekscie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.jpg">
+</head>
+<body>
+    <p class="Title">Działania na tekscie w JavaScript</p>
+    <form>
+        
+        <label class="label">Utwórz nowy znacznik</label><br>
+        <input id="Pole"class="in" placeholder="Wprowadź tekst"><button id="btn" type="button">Utwórz</button><br>
+        <label class="label">Dodaj log do testarea</label><br>
+        <input id="areaPole"class="in" placeholder="Wprowadź tekst"><button id="areaBTNnl" type="button">Dodaj do textarea</button><br>
+        <label class="label">Zmień Gradient</label><br>
+        <input id="gradientPole"class="in" placeholder="np: #fff,#000 (musi być ',')"><button id="gradientBTN" type="button">Zmień</button><br>
+    </form>
+    <div id="odpowiedz">
+        <p class="label">Logi:</p>
+<textarea id="textA" readonly></textarea>
+<p class="label">Utworzone znaczniki:</p>
+    </div>
+</body>
+<script src="buttonHandler.js"></script>
+</html>
