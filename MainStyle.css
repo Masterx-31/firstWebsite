@@ -62,3 +62,15 @@ a {
 #content{
     visibility: hidden;
 }
+.title {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+}
+.label {
+    color: white;
+    margin-bottom: 3px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  }
