@@ -15,7 +15,7 @@ sidebarBtn.onclick = function() {
         content.style.visibility = "hidden";
         sidebar.style.width = "4%";
         main.style.marginLeft = "4%";  
-        sidebarBtn.textContent = ">"
+        sidebarBtn.textContent = ">";
     };
  
 };
