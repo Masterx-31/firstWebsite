@@ -15,6 +15,7 @@ body {
     height: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    margin: 0;
 }
 button {
     background-color: white;
@@ -52,4 +53,37 @@ background: transparent;
 .Title { 
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
+}
+footer {
+    background-color: #bc6ff1;
+    height: 4%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+footer a {
+    background-color: #bc6ff1;
+    transition-duration: 0.2s;
+    width: 2%;
+    height: 100%;
+}
+footer a:hover {
+    background-color: #892cdc;
+    transition-duration: 0.2s;
+}
+.ans {
+    resize: none;
+    border: 2px black solid;
+    width: 17%;
+    height: 300px;
+}
+.ans:focus {
+    outline: none;
+}
+.margin {
+    margin-left: .5%;
+}
+.kolor {
+    margin-right: 3px;
+    display: none;
 }

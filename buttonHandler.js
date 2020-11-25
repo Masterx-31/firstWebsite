@@ -4,6 +4,9 @@ var ans = document.getElementById('odpowiedz');
 var txtA = document.getElementById('textA');
 var txtNL = document.getElementById('areaBTNnl');
 var gradBtn = document.getElementById('gradientBTN');
+var dwaZero = document.getElementById('dwaZero');
+var kolorA = document.getElementById('kolorA');
+var kolorB = document.getElementById('kolorB');
 
 // document.body.style.background = linear-gradient()
 btn.onclick = function() {
@@ -16,19 +19,40 @@ btn.onclick = function() {
     ans.appendChild(text);
     ans.classList.add('dodanyP');
 };
+dwaZero.onclick = function() {
+    if(dwaZero.checked == true) {
+        document.getElementById('gradientPole').style.display = "none";
+        kolorA.style.display = "inline-block";
+        kolorB.style.display = "inline-block";
+    } else{
+        document.getElementById('gradientPole').style.display = "inline-block";
+        kolorA.style.display = "none";
+        kolorB.style.display = "none";
+    }
+}
 
 areaBTNnl.onclick = function() {
     var wartosc = document.getElementById("areaPole").value;
     addToTextBox(wartosc + "\n");
 };
 gradBtn.onclick = function() {
-    var gradientColor = document.getElementById('gradientPole').value;
-    document.body.style.background = 'linear-gradient(' + gradientColor + ') ';
-    document.body.style.height = '100%';
-    document.body.style.backgroundRepeat = "no-repeat";
-    document.body.style.backgroundAttachment = "fixed";
-    var debugLog = "Zmieniono gradient na " + gradientColor + " "
-    addToTextBox(debugLog)
+    if(dwaZero.checked == false) {
+        var gradientColor = document.getElementById('gradientPole').value;
+        document.body.style.background = 'linear-gradient(' + gradientColor + ') ';
+        document.body.style.height = '100%';
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundAttachment = "fixed";
+        var debugLog = "Zmieniono gradient na " + gradientColor + " "
+        addToTextBox(debugLog)
+    } else {
+        var gradientColor = String(kolorA.value + "," + kolorB.value);
+        document.body.style.background = 'linear-gradient(' + gradientColor + ') ';
+        document.body.style.height = '100%';
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundAttachment = "fixed";
+        var debugLog = "Zmieniono gradient na " + gradientColor + " "
+        addToTextBox(debugLog)
+    }
 };
 function addToTextBox(text) {
     txtA.value = txtA.value + returnCzas() + text + "\n";

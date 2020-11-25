@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometria</title>
+    <link rel="icon" href="icon.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="margin">
+        <form>
+            <label class="label">Liczenie pola trójkąta</label><br>
+            <input class="in" id="bokA" placeholder="Podaj bok a" type="number"><br>
+            <label class="label">Czy trójkąt jest równoboczny</label><input type="checkbox" class="check" id="checkRB"><br>
+            <input class="in" id="bokH" placeholder="Podaj bok h" type="number"><br>
+            <button type="button" id="PoliczPoleT">Policz</button>
+        </form>
+        <div>
+            <p class="Label">Wyniki:</p>
+            <textarea readonly class="ans" id="answer"></textarea><br>
+            <button id="clearAns">Wyczyść odpowiedzi</button>
+        </div>
+    </div>
+</body>
+<script src="geometria.js"></script>
+</html>
