@@ -1,20 +1,20 @@
 console.log("Hello World!");
-var btn = document.getElementById('btn');
-var ans = document.getElementById('odpowiedz');
-var txtA = document.getElementById('textA');
-var txtNL = document.getElementById('areaBTNnl');
-var gradBtn = document.getElementById('gradientBTN');
-var dwaZero = document.getElementById('dwaZero');
-var kolorA = document.getElementById('kolorA');
-var kolorB = document.getElementById('kolorB');
+let btn = document.getElementById('btn');
+let ans = document.getElementById('odpowiedz');
+let txtA = document.getElementById('textA');
+let txtNL = document.getElementById('areaBTNnl');
+let gradBtn = document.getElementById('gradientBTN');
+let dwaZero = document.getElementById('dwaZero');
+let kolorA = document.getElementById('kolorA');
+let kolorB = document.getElementById('kolorB');
 
 // document.body.style.background = linear-gradient()
 btn.onclick = function() {
 
-    var answer = document.createElement("p");
-    var br = document.createElement("br");
+    let answer = document.createElement("p");
+    let br = document.createElement("br");
     ans.appendChild(br);
-    var text = document.createTextNode(returnCzas() + document.getElementById("Pole").value);
+    let text = document.createTextNode(returnCzas() + document.getElementById("Pole").value);
     answer.appendChild(text);
     ans.appendChild(text);
     ans.classList.add('dodanyP');
@@ -32,25 +32,25 @@ dwaZero.onclick = function() {
 }
 
 areaBTNnl.onclick = function() {
-    var wartosc = document.getElementById("areaPole").value;
+    let wartosc = document.getElementById("areaPole").value;
     addToTextBox(wartosc + "\n");
 };
 gradBtn.onclick = function() {
     if(dwaZero.checked == false) {
-        var gradientColor = document.getElementById('gradientPole').value;
+        let gradientColor = document.getElementById('gradientPole').value;
         document.body.style.background = 'linear-gradient(' + gradientColor + ') ';
         document.body.style.height = '100%';
         document.body.style.backgroundRepeat = "no-repeat";
         document.body.style.backgroundAttachment = "fixed";
-        var debugLog = "Zmieniono gradient na " + gradientColor + " "
+        let debugLog = "Zmieniono gradient na " + gradientColor + " "
         addToTextBox(debugLog)
     } else {
-        var gradientColor = String(kolorA.value + "," + kolorB.value);
+        let gradientColor = String(kolorA.value + "," + kolorB.value);
         document.body.style.background = 'linear-gradient(' + gradientColor + ') ';
         document.body.style.height = '100%';
         document.body.style.backgroundRepeat = "no-repeat";
         document.body.style.backgroundAttachment = "fixed";
-        var debugLog = "Zmieniono gradient na " + gradientColor + " "
+        let debugLog = "Zmieniono gradient na " + gradientColor + " "
         addToTextBox(debugLog)
     }
 };
@@ -58,9 +58,9 @@ function addToTextBox(text) {
     txtA.value = txtA.value + returnCzas() + text + "\n";
 };
 function returnCzas() {
-    var data = new Date();
-    var lepszeMinuty = "";
-    var lepszeGodziny = "";
+    let data = new Date();
+    let lepszeMinuty = "";
+    let lepszeGodziny = "";
     if(data.getMinutes < 10 ) {
         lepszeMinuty = "0" + data.getMinutes() + ": ";
     } else {
@@ -71,6 +71,6 @@ function returnCzas() {
     } else {
         lepszeGodziny = data.getHours() + ":";
     };
-    var czas = lepszeGodziny + lepszeMinuty;
+    let czas = lepszeGodziny + lepszeMinuty;
     return czas;
-}
+} 

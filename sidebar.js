@@ -1,7 +1,7 @@
-var sidebarBtn = document.getElementById("toggleButton");
-var sidebar = document.getElementById("sidebar");
-var main = document.getElementById("main");
-var content = document.getElementById("content");
+let sidebarBtn = document.getElementById("toggleButton");
+let sidebar = document.getElementById("sidebar");
+let main = document.getElementById("main");
+let content = document.getElementById("content");
 
 document.getElementById("sidebar").style.width = "4%"
 
@@ -18,4 +18,4 @@ sidebarBtn.onclick = function() {
         sidebarBtn.textContent = ">";
     };
  
-};
+}; //save
