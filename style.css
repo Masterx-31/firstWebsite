@@ -81,9 +81,12 @@ footer a:hover {
     outline: none;
 }
 .margin {
-    margin-left: .5%;
+    margin: auto;
 }
 .kolor {
     margin-right: 3px;
+    display: none;
+}
+#trojkat, #kwadrat, #prostokat, #trapez, #romb, #rownoleglobok, #d1d2Div {
     display: none;
 }

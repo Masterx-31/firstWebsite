@@ -24,7 +24,7 @@ a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: black;
+    color: white;
     display: block;
     transition: 0.3s;
     font-family: 'Roboto', sans-serif;
@@ -45,12 +45,12 @@ a {
     margin: 2px;
     text-align: right;
     font-family: 'Roboto', sans-serif;
-    color: black;
+    color: whitesmoke;
     float: right;
     margin-right: 5px;
     background-color: #892cdc;
     transition-duration: 0.2s;
-    font-size: 20px;
+    font-size: auto;
 }
 .closeButton:hover {
     background-color: #52057b;

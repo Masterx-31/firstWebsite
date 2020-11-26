@@ -10,12 +10,60 @@
 <body>
     <div class="margin">
         <form>
-            <label class="label">Liczenie pola trójkąta</label><br>
-            <input class="in" id="bokA" placeholder="Podaj bok a" type="number"><br>
-            <label class="label">Czy trójkąt jest równoboczny</label><input type="checkbox" class="check" id="checkRB"><br>
-            <input class="in" id="bokH" placeholder="Podaj bok h" type="number"><br>
-            <button type="button" id="PoliczPoleT">Policz</button>
+            <select id="figury">
+                <option value="none" disabled selected>Wybierz figurę</option>
+                <option value="tri">Trójkąt</option>
+                <option value="sq">Kwadrat</option>
+                <option value="rec">Prostokąt</option>
+                <option value="trap">Trapez</option>
+                <option value="romb">Rąb</option>
+                <option value="rowno">Równoległobok</option>
+            </select>
         </form>
+        <div id="trojkat">
+            <form>
+                <label class="label">Liczenie pola trójkąta</label><br>
+                <input class="in" id="bokA" placeholder="Podaj bok a" type="number"><br>
+                <label class="label">Czy trójkąt jest równoboczny</label><input type="checkbox" class="check" id="checkRB"><br>
+                <input class="in" id="bokH" placeholder="Podaj wysokość h" type="number"><br>
+                <button type="button" id="PoliczPoleT">Policz</button>
+            </form>
+        </div>
+        <div id="kwadrat">
+            <form>
+                <label class="label">Liczenie pola kwadratu</label><br>
+                <input class="in" id="KbokA" placeholder="Podaj bok a" type="number"><button type="button" id="PoliczPoleK">Policz</button><br>
+            </form>
+        </div>
+        <div id="prostokat">
+            <label class="label">Liczenie pola prostokątu</label><br>
+            <input class="in" id="PbokA" placeholder="Podaj bok a" type="number"><br>
+            <input class="in" id="PbokB" placeholder="Podaj bok b" type="number"><button type="button" id="PoliczPoleP">Policz</button><br>
+        </div>
+        <div id="trapez">
+            <label class="label">Liczenie pola trapezu</label><br>
+            <input class="in" id="TbokA" placeholder="Podaj bok a" type="number"><br>
+            <input class="in" id="TbokB" placeholder="Podaj bok b" type="number"><br>
+            <input class="in" id="TbokH" placeholder="Podaj wysokość h" type="number"><button type="button" id="PoliczPoleTr">Policz</button><br>
+        </div>
+        <div id="romb">
+            <label class="label">Liczenie pola rąbu</label><br>
+            <label class="label">Użyć przekatnych?</label><input type="checkbox" class="check" id="checkPR"><br>
+            <div id="ahDiv">
+                <input class="in" id="RbokA" placeholder="Podaj bok a" type="number"><br>
+                <input class="in" id="RbokH" placeholder="Podaj wysokość h" type="number">
+            </div>
+            <div id="d1d2Div">
+                <input class="in" id="RbokD1" placeholder="Podaj przekątną D1" type="number"><br>
+                <input class="in" id="RbokD2" placeholder="Podaj przekątną D2" type="number">
+            </div><button type="button" id="PoliczPoleR">Policz</button><br>
+                
+        </div>
+        <div id="rownoleglobok">
+            <label class="label">Liczenie pola równoległoboka</label><br>
+            <input class="in" id="RBbokA" placeholder="Podaj bok a" type="number"><br>
+            <input class="in" id="RBbokH" placeholder="Podaj wysokość h" type="number"><button type="button" id="PoliczPoleRB">Policz</button><br>
+        </div>
         <div>
             <p class="Label">Wyniki:</p>
             <textarea readonly class="ans" id="answer"></textarea><br>
