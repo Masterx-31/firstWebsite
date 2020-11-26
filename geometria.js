@@ -103,10 +103,10 @@ FieldBtn.onclick = function () {
         addAns(fFieldAns);
     }
 
-    clearAns.onclick = function () {
-        ansBox.value = ""
-    }
-
+    
+}
+clearAns.onclick = function () {
+    ansBox.value = ""
 }
 
 function addAns(text) {
